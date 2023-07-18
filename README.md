@@ -44,4 +44,10 @@ The server, which is a serverless function, will be hosted in a cloud provider, 
 
 - **Given** the main page is open;
 - **When** all the events pop up for the user;
-- **Then** the user navigates through the charts and rwads through events' details. 
+- **Then** the user navigates through the charts and reads through events' details. 
+
+# Serverless Functions
+
+The Meet App's backend uses FaaS and is hosted on AWS Lambda. It uses an external API (Google Calendar) which will be used to retrieve data for upcoming events, for this procedure to happen the user will need authentication with a valid token from Google OAuth authorisation server. 
+
+For the frontend, one example is that the users will be able to filter events where the serverless functions can perform data processing and filtering tasks, including task management. As the **Meet App** will display the charts and their details, where the serverless framework allows for effective resource allocation and scaling according to current demand of the user.
