@@ -1,17 +1,16 @@
 {
   "files": {
     "main.css": "/LeandraMT/meet_app.git/static/css/main.073c9b0a.css",
-    "main.js": "/LeandraMT/meet_app.git/static/js/main.02515368.js",
+    "main.js": "/LeandraMT/meet_app.git/static/js/main.4ec95193.js",
     "static/js/787.4b564826.chunk.js": "/LeandraMT/meet_app.git/static/js/787.4b564826.chunk.js",
     "service-worker.js": "/LeandraMT/meet_app.git/service-worker.js",
-    "static/media/logo.svg": "/LeandraMT/meet_app.git/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
     "index.html": "/LeandraMT/meet_app.git/index.html",
     "main.073c9b0a.css.map": "/LeandraMT/meet_app.git/static/css/main.073c9b0a.css.map",
-    "main.02515368.js.map": "/LeandraMT/meet_app.git/static/js/main.02515368.js.map",
+    "main.4ec95193.js.map": "/LeandraMT/meet_app.git/static/js/main.4ec95193.js.map",
     "787.4b564826.chunk.js.map": "/LeandraMT/meet_app.git/static/js/787.4b564826.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.02515368.js"
+    "static/js/main.4ec95193.js"
   ]
 }
