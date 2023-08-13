@@ -1,12 +1,9 @@
-/* eslint-disable no-restricted-globals */
 /* eslint-disable testing-library/no-render-in-setup */
-/* eslint-disable testing-library/prefer-presence-queries */
 /* eslint-disable testing-library/prefer-screen-queries */
-/* eslint-disable testing-library/render-result-naming-convention */
 import { render } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import userEvent from '@testing-library/user-event';
 
-//Test Component
+//Test component
 import NumberOfEvents from "../components/NumberOfEvents";
 
 describe('<NumberOfEvents /> component', () => {
@@ -15,11 +12,27 @@ describe('<NumberOfEvents /> component', () => {
         NumberOfEventsComponent = render(<NumberOfEvents />);
     });
 
-    test('default value of textbox is 32 events', () => {
-        const TextBox = NumberOfEventsComponent.queryByRole('spinbutton');
+    test('renders number of events in textbox', () => {
+        const NumberTextBox = NumberOfEventsComponent.queryByRole('textbox');
 
-        expect(TextBox.value).toBe('32');
+        expect(NumberTextBox).toBeInTheDocument();
+        expect(NumberTextBox).toHaveClass('number-of-events-textbox');
     });
 
-    //Check test for when user changes input and the textbox changes accordingly
-})
+    test('default events are 32', async () => {
+        const numberTextBox = NumberOfEventsComponent.queryByRole('textbox');
+
+        expect(numberTextBox).toHaveValue("32");
+    });
+
+    test('number of events in the textbox change according to what user types',
+        async () => {
+            const user = userEvent.setup();
+            const numberTextBox = NumberOfEventsComponent.queryByRole('textbox');
+
+            await user.type(numberTextBox, "15");
+
+            //having the default value already written(32) + 15
+            expect(numberTextBox).toHaveValue("3215")
+        });
+});
