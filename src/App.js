@@ -35,7 +35,7 @@ const App = () => {
                 setCurrentCity={setCurrentCity}
             />
             <EventList allEvents={events} />
-            <NumberOfEvents />
+            <NumberOfEvents setCurrentNOE={setCurrentNOE} />
         </div>
     );
 }
