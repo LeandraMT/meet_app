@@ -8,16 +8,16 @@ const Event = ({ allEvents }) => {
     }
 
     return (
-        <li>
+        <li className="event">
             <h2>{allEvents.summary}</h2>
             <p>{allEvents.location}</p>
             <p>{allEvents.start.dateTime}</p>
-            <button onClick={handleShowDetails}>
+            <button onClick={handleShowDetails} className="details-btn">
                 {showDetails ? "Hide details" : "Show details"}
             </button>
 
             {showDetails && (
-                <ul>
+                <ul className="details">
                     <li>End time: {allEvents.end.dateTime}</li>
                     <li>Organiser: {allEvents.organizer.email}</li>
                 </ul>
