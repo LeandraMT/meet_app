@@ -18,8 +18,9 @@ const Event = ({ allEvents }) => {
 
             {showDetails && (
                 <ul className="details">
-                    <li>End time: {allEvents.end.dateTime}</li>
-                    <li>Organiser: {allEvents.organizer.email}</li>
+                    <li><span>Description: </span> {allEvents.description}</li>
+                    <li><span>End Time: </span>{allEvents.end.dateTime}</li>
+                    <li><span>Organiser: </span> {allEvents.organizer.email}</li>
                 </ul>
             )}
         </li>

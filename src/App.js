@@ -30,6 +30,7 @@ const App = () => {
 
     return (
         <div className="App">
+            <h1 className='main-heading'>Meet</h1>
             <CitySearch
                 allLocations={allLocations}
                 setCurrentCity={setCurrentCity}

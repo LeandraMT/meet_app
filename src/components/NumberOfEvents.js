@@ -11,7 +11,7 @@ const NumberOfEvents = ({ }) => {
 
     return (
         <div id="number-of-events">
-            <label>Number of Events:</label>
+            <label>Number of Events: </label>
             <input
                 type="text"
                 className="number-of-events-textbox"
