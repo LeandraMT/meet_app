@@ -30,7 +30,10 @@
 
         <p>Click the button below to get your auth url.</p>
         <button id="getAuthUrlButton">
-            <a href="https://uvvrz2x0c5.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url">
+            <!--<a href="https://uvvrz2x0c5.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url">
+                Get OAuth URL
+            </a>-->
+            <a href="https://leandramt.github.io/meet_app/api/get-auth-url">
                 Get OAuth URL
             </a>
         </button>
@@ -71,7 +74,9 @@
         const getAuthUrlButton = document.getElementById("getAuthUrlButton");
         const resultEL = document.getElementById("result");
         const resultLink = document.getElementById("authURL");
-        const getAuthURL = "https://uvvrz2x0c5.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url";
+        //const getAuthURL = "https://uvvrz2x0c5.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url";
+        const getAuthURL = "https://leandramt.github.io/meet_app/api/get-auth-url";
+
 
         getAuthUrlButton.onclick = function () {
             fetch(getAuthURL)
