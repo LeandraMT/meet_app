@@ -31,6 +31,14 @@ ul {
   font-weight: 400;
 }
 
+.alerts-container {
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  width: 250px;
+  z-index: 1000;
+}
+
 /*EVENT COMPONENT*/
 .event {
   padding: 10px 10px 35px;
