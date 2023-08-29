@@ -26,7 +26,7 @@ const removeQuery = () => {
             window.location.protocol +
             "//" +
             window.location.host +
-            window.locatio.pathname;
+            window.location.pathname;
         window.history.pushState("", "", newUrl);
     }
     else {
@@ -49,6 +49,11 @@ const getToken = async (code) => {
     return access_token;
 }
 
+/** jsdoc
+ *  check for the localstroagre and return list of events
+ * @param name
+ * @returns eventts
+ */
 export const getEvents = async () => {
     if (window.location.href.startsWith('http://localhost')) {
         return mockData;
@@ -81,14 +86,14 @@ export const getAccessToken = async () => {
         const searchParams = new URLSearchParams(window.location.search);
         const code = await searchParams.get("code");
         if (!code) {
-            const response = await fetch(
-                "YOUR_SERVERLESS_GET_AUTH_URL_ENDPOINT"
+            const response = await fetch("https://uvvrz2x0c5.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url"
+
             );
 
             const result = await response.json();
 
-            const { getAuthURL } = result;
-            return (window.location.href = getAuthURL); //"https://uvvrz2x0c5.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url"
+            const { authUrl } = result;
+            return (window.location.href = authUrl); //"https://uvvrz2x0c5.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url"
         }
         return code && getToken(code);
     }
