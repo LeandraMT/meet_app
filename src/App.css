@@ -2,8 +2,8 @@
 
 :root {
   --background: #38598b;
-  --color: #be95c4;
-  --darker_color: #5e548e;
+  --color: #ffaaa5;
+  --secondary_color: #ffcccc;;
   --grey: #757a79;
   --white: #fff;
 }
@@ -50,7 +50,7 @@ ul {
 }
 
 .event > h2 {
-  color: var(--grey);
+  color: var(--secondary_color);
   font-weight: 400;
 }
 
@@ -75,7 +75,7 @@ ul {
 }
 
 .details {
-  color: var(--grey);
+  color: var(--white);
   padding: 5px;
   font-size: 15px;
 }
@@ -135,7 +135,7 @@ input[type="text"] {
 }
 
 .suggestions > li:hover {
-  background-color: var(--color);
+  background-color: var(--secondary_color);
 }
 
 /*NUMBER OF EVENTS COMPONENT*/
@@ -145,5 +145,5 @@ input[type="text"] {
 
 #number-of-events > label {
   font-weight: 500;
-  color: var(--grey);
+  color: var(--secondary_color);
 }
