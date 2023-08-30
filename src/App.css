@@ -50,12 +50,12 @@ ul {
 }
 
 .event > h2 {
-  color: var(--darker_color);
+  color: var(--grey);
   font-weight: 400;
 }
 
 .event > p {
-  color: var(--grey);
+  color: var(--white);
   font-weight: 300;
   font-size: 16px;
 }
@@ -75,7 +75,7 @@ ul {
 }
 
 .details {
-  color: var(--darker_color);
+  color: var(--grey);
   padding: 5px;
   font-size: 15px;
 }
@@ -145,5 +145,5 @@ input[type="text"] {
 
 #number-of-events > label {
   font-weight: 500;
-  color: var(--darker_color);
+  color: var(--grey);
 }
