@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap');
 
 :root {
-  --background: #ececec;
-  --green: #7fa99b;
-  --dark_green: #283739;
+  --background: #231942;
+  --color: #be95c4;
+  --darker_color: #5e548e;
   --grey: #757a79;
   --white: #fff;
 }
@@ -26,7 +26,7 @@ ul {
 }
 
 .main-heading {
-  color: var(--green);
+  color: var(--color);
   font-size: 56px;
   font-weight: 400;
 }
@@ -45,12 +45,12 @@ ul {
   margin-bottom: 10px;
   text-align: left;
   position: relative;
-  border: 1px solid var(--green);
+  border: 1px solid var(--color);
   border-radius: 5px;
 }
 
 .event > h2 {
-  color: var(--dark_green);
+  color: var(--darker_color);
   font-weight: 400;
 }
 
@@ -69,13 +69,13 @@ ul {
   border-radius: 4px;
   font-family: inherit;
 
-  background-color: var(--green);
+  background-color: var(--color);
   color: var(--white);
   cursor: pointer;
 }
 
 .details {
-  color: var(--dark_green);
+  color: var(--darker_color);
   padding: 5px;
   font-size: 15px;
 }
@@ -94,7 +94,7 @@ span {
 input[type="text"] {
   padding: 8px 6px 8px 10px;
   border-radius: 4px;
-  border: 1px solid var(--dark_green);
+  border: 1px solid var(--darker_color);
   font-size: 14px;
   line-height: 20px;
   align-self: center;
@@ -135,7 +135,7 @@ input[type="text"] {
 }
 
 .suggestions > li:hover {
-  background-color: var(--green);
+  background-color: var(--color);
 }
 
 /*NUMBER OF EVENTS COMPONENT*/
@@ -145,5 +145,5 @@ input[type="text"] {
 
 #number-of-events > label {
   font-weight: 500;
-  color: var(--dark_green);
+  color: var(--darker_color);
 }
