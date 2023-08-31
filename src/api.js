@@ -108,7 +108,7 @@ export const getAccessToken = async () => {
             const result = await response.json();
 
             const { authUrl } = result;
-            return (window.location.href = authUrl); //"https://uvvrz2x0c5.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url"
+            return (window.location.href = authUrl);
         }
         return code && getToken(code);
     }
