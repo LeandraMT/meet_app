@@ -32,7 +32,7 @@ const App = () => {
 
     useEffect(() => {
         let warningText;
-        if (navigator.onLine) {
+        if (!navigator.onLine) {
             warningText = "You are currently offline. The events list may not be up to date"
         }
         else {
