@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { extractLocations, getEvents } from './api';
 
 //Test Components
+import CityEventsChart from './components/CityEventsChart';
 import EventList from './components/EventList';
 import CitySearch from './components/CitySearch';
 import NumberOfEvents from './components/NumberOfEvents';
@@ -59,6 +60,10 @@ const App = () => {
                 allLocations={allLocations}
                 setCurrentCity={setCurrentCity}
                 setInfoAlert={setInfoAlert}
+            />
+            <CityEventsChart
+                allLocations={allLocations}
+                events={events}
             />
             <EventList
                 allEvents={events}

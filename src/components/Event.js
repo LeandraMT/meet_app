@@ -24,6 +24,7 @@ const Event = ({ allEvents }) => {
                 </ul>
             )}
         </li>
+
     );
 }
 
