@@ -39,6 +39,18 @@ ul {
   z-index: 1000;
 }
 
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 /*EVENT COMPONENT*/
 .event {
   padding: 10px 10px 35px;
