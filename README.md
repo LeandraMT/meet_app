@@ -27,5 +27,3 @@ The Meet App has Atatus, the APM tool integrated to capture all relevant data an
 - Recharts to display a ScatterChart has been implemented, where users will be able to see in a visual format the events and its details.
 
 I have used Recharts for this project as it is a lightweight charting library with a well-documented resources and easy to customise.
-
-Link to the application: https://leandramt.github.io/meet_app/
